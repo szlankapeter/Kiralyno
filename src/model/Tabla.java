@@ -5,7 +5,7 @@ import java.util.Random;
 public class Tabla {
 
     Random rnd = new Random();
-    private char[][] T;
+    private final char[][] T;
     private final char UresCella;
 
     public Tabla(char UresCella) {
@@ -22,7 +22,7 @@ public class Tabla {
         String szoveg = "";
         for (int i = 0; i <= 7; i++) {
             for (int j = 0; j <= 7; j++) {
-                szoveg += T[i][j] + " ";
+                szoveg += T[i][j] + "   ";
             }
             szoveg += "\n";
         }
