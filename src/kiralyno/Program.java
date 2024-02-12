@@ -1,9 +1,16 @@
 package kiralyno;
 
+import model.Tabla;
+import view.KonzolView;
+
 public class Program {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        Tabla t = new Tabla('.');
+        t.Elhelyez(8);
+        
+        KonzolView kv = new KonzolView(t);
+        kv.Kiir();
     }
     
 }
